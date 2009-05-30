@@ -16,7 +16,6 @@ BuildRequires: perl(LWP::UserAgent)
 BuildRequires: perl(SOAP::Lite)
 BuildRequires: perl(URI)
 BuildRequires: perl(URI::QueryParam)
-BuildRequires: perl()
 BuildArch: noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
