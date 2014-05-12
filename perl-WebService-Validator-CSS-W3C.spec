@@ -1,11 +1,12 @@
 %define upstream_name    WebService-Validator-CSS-W3C
-%define upstream_version 0.2
+%define upstream_version 0.3
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 Summary:	Interface to the W3C CSS Validator
+
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
@@ -42,18 +43,4 @@ make test
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
 
-%changelog
-* Mon Apr 25 2011 Funda Wang <fwang@mandriva.org> 0.200.0-2mdv2011.0
-+ Revision: 658455
-- rebuild for updates rpm-setup
-
-* Sat May 30 2009 Jérôme Quelin <jquelin@mandriva.org> 0.200.0-1mdv2010.0
-+ Revision: 381316
-- removing unused buildrequires:
-- adding missing buildrequires:
-- import perl-WebService-Validator-CSS-W3C
-
-
-* Sat May 30 2009 cpan2dist 0.2-1mdv
-- initial mdv release, generated with cpan2dist
 
