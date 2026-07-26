@@ -1,16 +1,14 @@
 %define upstream_name    WebService-Validator-CSS-W3C
-%define upstream_version 0.3
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	4
+Version:	0.3
+Release:	5
 
 Summary:	Interface to the W3C CSS Validator
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/WebService-Validator-CSS-W3C
-Source0:	https://cpan.metacpan.org/authors/id/B/BJ/BJOERN/WebService-Validator-CSS-W3C-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/B/BJ/BJOERN/WebService-Validator-CSS-W3C-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -27,7 +25,7 @@ http://jigsaw.w3.org/css-validator/ manpage, based on its SOAP 1.2 support.
 It helps to find errors in Cascading Style Sheets.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
